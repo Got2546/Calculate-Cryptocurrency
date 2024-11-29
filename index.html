@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Value Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto Value Calculator</h1>
+    <form id="crypto-form">
+      <div class="form-group">
+        <label for="crypto-amount">Amount of Cryptocurrency:</label>
+        <input type="number" id="crypto-amount" placeholder="Enter amount" required>
+      </div>
+      <div class="form-group">
+        <label for="crypto-price">Price per Unit (in USD):</label>
+        <input type="number" id="crypto-price" placeholder="Enter price per unit" required>
+      </div>
+      <button type="button" onclick="calculateCryptoValue()">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
